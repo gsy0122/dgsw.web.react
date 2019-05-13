@@ -1,0 +1,17 @@
+html {
+  font-size: 30pt;
+}
+
+.counter-style {
+  font-size: 50pt;
+  div {
+    font-size: 1.6rem; // 1rem = 30pt (root)
+  }
+  input {
+    font-size: 1em;
+    width: 300px;
+  }
+  button {
+    font-size: 1.6em; // 1.2em = 50pt
+  }
+}
