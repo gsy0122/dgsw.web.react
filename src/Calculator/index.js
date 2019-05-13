@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+import Num1 from './Num1';
+import Num2 from './Num2';
+
 class Calculator extends Component {
     state = {
         num1: 0,
@@ -10,10 +13,8 @@ class Calculator extends Component {
         let { num1, num2, result } = this.state;
         return (
             <div>
-                <div>
-                    <input value={num1} onChange={this.handleChange1}/>
-                    <input value={num2} onChange={this.handleChange2}/>
-                </div>
+                <Num1 num1={num1} handleChange1={this.handleChange1} />
+                <Num2 num2={num2} handleChange2={this.handleChange2} />
                 <button onClick={this.handleAdd}>+</button>
                 <button onClick={this.handleMin}>-</button>
                 <button onClick={this.handleMul}>*</button>
